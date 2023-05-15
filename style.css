@@ -1,0 +1,105 @@
+body {
+    background-color: #1a3a3a;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#intro {
+    color: white;
+    height: 100vh;
+}
+
+#intro h1 {
+    font-size: 96px;
+    animation: fadein ease-in 1s;
+}
+
+#intro h3 {
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#intro code {
+    font-size: 1.75rem;
+}
+
+#whoAmI {
+    color: #533745;
+}
+
+#welcome {
+    color: #e28413;
+}
+#arrowDown {
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px);
+    color: #e4dfda;
+}
+
+#about {
+    color: white;
+    background: #533745;
+    padding: 30px;
+}
+
+#contact {
+    background: #e28413;
+    color: white;
+    padding: 30px;
+}
+
+#contact a {
+    color: white;
+}
+
+#email {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+form .btn-primary {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #533745;
+}
+
+#portfolio {
+    background-color: white;
+    padding: 30px;
+}
+
+Footer {
+    background-color: #1a3a3a;
+    color: white;
+    padding: 30px;
+}
+
+section {
+    box-shadow: -10px 0 25px black;
+}
+
+@media only screen and (max-width: 775px) {
+    #intro h1 {
+        font-size: 50px;
+    }
+    #intro h3 {
+        font-size: 1.5rem;
+    }
+}
